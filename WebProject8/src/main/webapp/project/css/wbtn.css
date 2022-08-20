@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.wbtn{
+  margin-top:5px;
+  float: right;
+  width: 70px;
+  height: 50px;
+  background-color:rgb(116, 58, 158);
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 5px;
+  color: white;
+  font-weight: 800;
+}

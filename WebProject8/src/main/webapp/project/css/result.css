@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* 강의 소개 부분 */
+.evalutionInfo{
+	width: 100%;
+	padding: 20px 0px;
+	min-height: 200px;
+	position: relative;
+	box-sizing: border-box;
+    background: none;
+}
+.evalutionSection{
+	width: 100%;
+    max-width: 720px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    min-height: inherit;
+    border-radius: 6px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 4px 0px;
+    background: 0% 0% no-repeat padding-box padding-box rgb(255, 255, 255);
+    padding: 10px 16px 14px;
+}
+.charts{
+	margin: 0px;
+    width: 45%;
+    min-height: inherit;
+    float:left;
+}
+.evalutionSectionInfo{
+	margin: 0px;
+    width: 45%;
+    min-height: inherit;
+    float:left;
+}
+.lecture{
+	font-size:35px;
+	font-weight: 600;
+}
+.professor{
+	font-size:20px;
+	font-weight: 600;
+	color: gray;
+}
+
+.evalutionlCountDiv{
+	width: 80%;
+	float: left;
+}
+.latest{
+	width: 10%;
+	float: left;
+}
+.like{
+	width: 10%;
+	float: left;
+}
+/* 강의 별 */
+.main_star-ratings {
+  font-size:35px;
+  color: #aaa9a9; 
+  position: relative;
+  unicode-bidi: bidi-override;
+  width: max-content;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: #2b2a29;
+  float:left;
+}
+.main_star-ratings-fill {
+  font-size:35px;
+  color: #fff58c;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-text-fill-color: gold;
+  float:left;
+}
+
+/*강의 평가 부분*/
+.resultsection{
+	width: 100%;
+    padding: 40px 0px;
+    min-height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: none;
+    margin-bottom: 100px;
+}
+
+.bar{
+	width: 100%;
+    max-width: 720px;
+    margin: 0px auto;
+    position: relative;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.resultEvalution{
+	width: 100%;
+    max-width: 720px;
+    margin: 0px auto;
+    position: relative;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    min-height: inherit;
+}
+
+.evalutionCount2{
+	margin: 0px 0px 20px;
+    font-size: 18px;
+}
+
+.evalution{
+	margin: 0px;
+	margin-bottom: 10px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 4px 0px;
+    background: 0% 0% no-repeat padding-box padding-box rgb(255, 255, 255);
+    padding: 10px 16px 14px;
+}
+.simpleEvalution{
+	width: 100%;
+    box-sizing: border-box;
+    padding: 0px 10px 10px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    position: relative;
+    display: table;
+    table-layout: fixed;
+}
+
+.satisfy{
+	font-size: 17px;
+	width: 20%;
+    text-align: center;
+	display: table-cell;
+    vertical-align: top;
+}
+
+.satisfy2{
+	float: right;
+	font-size: 17px;
+	width: 40%;
+	text-align: center;
+    vertical-align: top;
+}
+
+.nick{
+	width: 20%;
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+.nick div{
+	border-radius: 20px;
+    font-size: 22px;
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+    text-align: left;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.comment{
+	width: 100%;
+    box-sizing: border-box;
+    padding: 16px 10px 20px;
+    color: rgb(34, 34, 34);
+    word-break: break-all;
+    line-height: 1.4;
+    font-size: 16px;
+}
+.whiteSpace{
+	width: 100%;
+    padding: 0px 10px 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.commonSection{
+	width: 100%;
+    display: table;
+    table-layout: fixed;
+    padding-top: 12px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+.likeSection{
+	width: 50%;
+    display: table-cell;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+    font-weight: 600;
+    cursor: pointer;
+}
+.deleteSection{
+	width: 50%;
+    display: table-cell;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+    font-weight: 600;
+    cursor: pointer;
+}
+.score{
+	font-size:25px;
+	font-weight: 600;
+}
+
+/* 별 */
+.star-ratings {
+  font-size:25px;
+  color: #aaa9a9; 
+  position: relative;
+  unicode-bidi: bidi-override;
+  width: max-content;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: #2b2a29;
+}
+ 
+.star-ratings-fill {
+  font-size:25px;
+  color: #fff58c;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-text-fill-color: gold;
+}
+ 
+.star-ratings-base {
+  z-index: 0;
+  padding: 0;
+}
+
+
+ 

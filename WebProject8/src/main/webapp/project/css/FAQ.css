@@ -1,0 +1,396 @@
+@charset "UTF-8";
+
+/*자주 찾는 질문 부분*/
+input[id*="answer"]{
+	display:none;
+}
+input[id*="answer"] + label{
+	display:block;
+	width:1024px;
+	padding:20px;
+	border:20px;
+	border:1px solid #232188;
+	border-bottom:0;
+	color:#fff;
+	font-weight:900;
+	background:rgb(116, 58, 158);
+	cursor:pointer;
+	position:center;
+}
+input[id*="answer"] + label em{
+	position:absolute;
+	top:50%;
+	right:10px;
+	width:30px;
+	height:30px;
+	margin-top:-15px;
+	display:inline-block;
+}
+input[id*="answer"] + label +div{
+	max-height:0;
+	transition: all .35s;
+	overflow:hidden;
+	width:1024px;
+	background:#ebf8ff;
+	font-size:11px;
+}
+input[id*="answer"] + label + div p{
+	display:inline-block;
+	padding:20px;
+	font-size:15px;
+}
+
+input[id*="answer"]:checked + label + div {max-height:100px;}
+input[id*="answer"]:checked + label em{background-position:0 -30px;} 
+
+.inquiry{
+	font-weight:bold;
+	font-size:15px;
+}
+/* 여기까지 */
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+.root{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.body-content{
+	margin-bottom: 400px;
+}
+
+body{
+	font-family:"맑은 고딕","돋움", sans-serif;
+	font-size:12px;
+	color:#444444;
+	background-color:white;
+}
+
+ul{
+	list-style-type:none;
+}
+
+.li_from{
+	display:inline;
+}
+
+header{
+	height:80px;
+}
+
+header #logo{
+	float:left;
+	margin-top: 20px;
+}
+	
+header #top {
+	box-sizing: border-box;
+	display:inline;
+}
+
+header #top_menu {
+	padding-top: 27px;
+	box-sizing: border-box;
+	color:#888888;
+}
+
+header #top_menu ul{
+	margin-left: 170px;
+}	
+
+header #top_menu li{
+	display:inline;
+	font-size: 18px;
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+a:link, a:visited, a:hover, a:active{
+	text-decoration:none;	
+}
+
+/*-------------------푸터-------------------*/
+footer{position:fixed; /* footer 하단 고정*/
+	padding-top: 20px;
+	color: rgb(124, 124, 124);
+	height:100px;
+	margin-top:200px;
+	background-color:#eff1f0;
+	left:0px; 
+  bottom:0px; 
+	width:100%; 
+}
+
+.footer_div{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+footer #footer_link li{
+	display:inline-flex;
+	margin-left:10px;
+}
+
+/* 검색 부분 */
+.searchback{
+	background-color:#fcfcfc;
+	height:150px;
+	text-align: center;
+	width:1024px;
+	margin: 0 auto;
+}
+.cs{
+	padding-top:30px;
+	padding-left:10px;
+	font-weight: bold;
+	color:black;
+}
+.searchsection{
+	width:720px;
+	display: inline-block;
+}
+.secrchblock{
+	text-align: left;
+}
+
+/* 도움말, 자주찾는 질문 글씨 조정*/ 
+
+.help{
+	font-size:20px;
+	text-decoration-thickness: 3px;
+	text-underline-offset:3px;
+}
+.faqq{
+	font-size:20px;
+	text-decoration-thickness: 3px;
+	text-underline-offset:3px;
+}
+
+.help:active{
+	font-size:20px;
+	text-decoration-thickness: 3px;
+	text-underline-offset:3px;
+	text-decoration-line:underline;
+	text-decoration-color:#fd8181;
+	font-weight:bold;
+}
+
+.faqq:active{
+	font-size:20px;
+	text-decoration-thickness: 3px;
+	text-underline-offset:3px;
+	text-decoration-line:underline;
+	text-decoration-color:#fd8181;
+	font-weight:bold;
+}
+
+.help:hover{
+font-size:20px;
+	text-decoration-thickness: 3px;
+	text-underline-offset:3px;
+	text-decoration-line:underline;
+	text-decoration-color:#fd8181;
+}
+
+.faqq:hover{
+	font-size:20px;
+	text-decoration-thickness: 3px;
+	text-underline-offset:3px;
+	text-decoration-line:underline;
+	text-decoration-color:#fd8181;
+}
+
+/* 공지사항 메인 */
+.NoticeT{
+	font-weight:bold;
+	font-size:30px;
+	margin-bottom:10px;
+}
+
+.NoticTable{
+	table-layout: fixed;
+	width: 900px;
+	border-collapse: collapse;
+	border-bottom:1px solid rgb(230,230,230);	
+}
+
+table{
+	display: table;
+	text-indent: initial;
+	box-sizing: border-box;
+	border-spacing:2px;
+	border-color:grey;
+}
+.no:first-child{
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.no{
+	text-align:center;
+	font-size:20px;
+	font-weight:600;
+	background-color: rgb(246,246,246);
+	color: rgb(102,102,102)
+}
+
+th{
+	display: table-cell;
+	vertical-align: inherit;
+}
+
+.title{
+	font-size:20px;
+	font-weight:600;
+	background-color: rgb(246, 246, 246);
+	color: rgb(102, 102, 102);
+	text-align:left;
+}
+
+.NoticeNo{
+	padding: 10px 0px;
+	text-align:center;
+	font-size:17px;	
+	color: rgb(34, 34, 34);
+}
+
+td{
+	display: table-cell;
+	vertical-align: inherit;
+}
+.NoticeTitle{
+	padding: 10px 0px;
+	font-size:17px;
+	color: rgb(34, 34, 34);
+	text-align:left;	
+}
+
+div{
+	display: block;
+}
+.NotBu:hover,
+.NotBu:visited,.NotBu:link {
+	color:rgb(255,255,255);
+}
+a:link{
+	text-decoration:none;
+}
+.NotBu{
+	padding:2px;
+	width:30px;
+	height:30px;
+	box-sizing:border-box;
+	border-radius:50%;
+	background-color:orange;
+	font-size:17px;
+	display:inline-block;
+	text-align:center;
+}
+
+.notsec{
+	min-height:1250px;
+	position:relative;
+	box-sizing: border-box;
+	background:(255,255,255);
+	text-align: center;
+}
+section{
+	display: block;
+}
+.NotPage{
+	max-width:1024px;
+	margin:0px auto;
+	position: relateive;
+	padding:0px 20px;
+	box-sizing: border-box;
+	min-height:inherit;
+	margin: 0 auto;
+}
+.nottitle{
+	text-align: left;
+	border-bottom:1px solid rgb(215,215,215);
+	padding: 0px 10px 16px;
+	width: 100%;
+	max-width:inherit;
+}
+.notw1{
+	font-size:25px;
+	color:rgb(68, 68, 68);
+	position:relative;
+}
+.notw2{
+	margin-bottom:8px;
+	font-size:30px;
+	font-weight:600;
+	color:(34, 34, 34);
+	max-width:100%;
+	overflow-x:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+p{
+	margin:0px;
+	display:block;
+	margin-block-start:0.5em;
+	margin-block-end:0.5em;
+	margin-inline-start:0px;
+	margin-inline-end:0px;
+}
+.notw3{
+	font-size:16px;
+	color: rgb(124, 124, 124);
+	letter-spacing: -0.35px;
+}
+.notcon{
+	font-size:18px;
+	padding:20px 10px;
+	border-bottom:1px solid rgb(215, 215, 215);
+	word-break:break-word;
+	text-align: left;
+	width: 100%;
+	max-width:inherit;
+}
+span{
+	width: 30%;
+}
+.notback{
+	margin-top:10px;
+	text-align:center;
+	height:36px;
+	font-size:16px;
+	cursor:pointer;
+	background-color:transparent;
+	border:none;
+	outline:0px;
+	position:relative;
+	text-align: left;
+	width: 100%;
+	max-width:inherit;
+}
+
+.arrow{
+	margin-bottom:5px;
+}
+
+.helpSection{
+	width: 100%;
+    min-height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+}
+
+.helpArea{
+	width: 100%;
+    max-width: 1024px;
+    margin: 0px auto;
+    position: relative;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    min-height: inherit;
+}

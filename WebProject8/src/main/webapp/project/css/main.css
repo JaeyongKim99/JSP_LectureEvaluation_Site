@@ -1,0 +1,107 @@
+/*배너*/
+section#main{
+	position: relative;
+	margin:0px;
+	height:300px;
+	background-color:rgb(116, 58, 158);
+}
+div#mainb{
+	position:absolute;
+	z-index:99;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+/* 검색 */
+.search{
+	padding-top: 60px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.Mainsearch{
+	border: 2px solid rgb(215, 215, 215);
+	display: inline-flex;
+	background: rgb(246, 246, 246);
+	border-radius: 30px;
+	padding: 5px;
+	width: 500px;
+}
+.searchBar{
+	background: rgb(246, 246, 246);
+	border: 0;
+	outline: 0;
+	overflow: visible;
+}
+.icon{
+	background: rgb(246, 246, 246);
+	border: 0;
+	width: 40px;
+	font-size: 20px;
+	color: rgb(215, 215, 215);
+  transition-property:color;
+  transition-duration:0.5s;
+}
+.icon:hover{
+	color: black;
+}
+
+/* 공지사항 */
+.u{
+	font-size:20px;
+	font-weight:bold;
+	text-decoration-line:underline;
+	text-decoration-color:#fd8181;
+	text-decoration-thickness: 3px;
+	text-underline-offset:3px;
+	text-align: left;
+	width: 100%;
+}
+
+.u2{
+	margin-top:20px;
+	line-height:2.0em;
+	font-size: 15px;
+}
+.notice{
+	max-width:720px;
+	top: 50%;
+	left: 15%;
+	margin: 0 auto;
+}
+
+.notice_block{
+	text-align: left;
+	margin-top: 40px;
+	width: 100%;
+	height: 500px;
+}
+
+.noticeLink{
+	display: inline-block;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 130px);
+}
+
+.noticeDate{
+	position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 12px;
+    width: 70px;
+    color: rgb(136, 136, 136);
+    letter-spacing: -0.35px;
+    text-align: right;
+}
+
+.noticeLi{
+	font-size: 16px;
+    list-style: none;
+    position: relative;
+    line-height: 24px;
+    height: 30px;
+}
