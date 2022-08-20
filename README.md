@@ -1,7 +1,4 @@
-# JSP_LectureEvaluation_Site
-
-
-# **DBLUE**
+# JSP_LectureEvaluation_Sit **DBLUE**
 
 **기획의도**
 
